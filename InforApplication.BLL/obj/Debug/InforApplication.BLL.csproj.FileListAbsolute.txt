@@ -1,0 +1,5 @@
+C:\Users\dipan\Documents\Visual Studio 2015\Projects\InforApplication\InforApplication.BLL\bin\Debug\InforApplication.BLL.dll
+C:\Users\dipan\Documents\Visual Studio 2015\Projects\InforApplication\InforApplication.BLL\bin\Debug\InforApplication.BLL.pdb
+C:\Users\dipan\Documents\Visual Studio 2015\Projects\InforApplication\InforApplication.BLL\obj\Debug\InforApplication.BLL.csprojResolveAssemblyReference.cache
+C:\Users\dipan\Documents\Visual Studio 2015\Projects\InforApplication\InforApplication.BLL\obj\Debug\InforApplication.BLL.dll
+C:\Users\dipan\Documents\Visual Studio 2015\Projects\InforApplication\InforApplication.BLL\obj\Debug\InforApplication.BLL.pdb

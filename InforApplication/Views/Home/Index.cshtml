@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div ng-controller="BookController">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>All File List</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">File Name</div>
+                    <div class="col-sm-6">File Location</div>
+                </div>
+                <div ng-repeat="file in Files">
+                    <div class="row">
+                        <div class="col-sm-6">{{file.FileName}}</div>
+                        <div class="col-sm-6">{{file.FileLocation}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h2>All File Formats</h2>
+            <div class="container" >
+                <div class="row info">
+                    <div class="col-sm-6">Format Type</div>
+                    <div class="col-sm-6">Columns</div>
+                </div>
+                <div ng-repeat="file in FileFormats">
+                    <div class="row">
+                        <div class="col-sm-6">{{file.FormatType}}</div>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-4">Column Name</div>
+                                <div class="col-sm-4">Start Position</div>
+                                <div class="col-sm-4">End Position</div>
+                            </div>
+                            <div ng-repeat="col in file.Columns">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        {{col.ColumnName}}
+                                    </div>
+                                    <div class="col-sm-4">
+                                        {{col.StartPosition}}
+                                    </div>
+                                    <div class="col-sm-4">
+                                        {{col.EndPosition}}
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding-top: 40px;">
+        <h2>Import Books</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <a href="#" class="btn btn-primary" ng-click="ImportAllFiles()"> Import ALL</a>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-4">Name</div>
+                    <div class="col-sm-4">Isbn</div>
+                    <div class="col-sm-4">Author</div>
+                </div>
+                <div ng-repeat="book in Books">
+                    <div class="row">
+                        <div class="col-sm-4">{{book.Name}}</div>
+                        <div class="col-sm-4">{{book.Isbn}}</div>
+                        <div class="col-sm-4">{{book.Author}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
